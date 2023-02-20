@@ -27,7 +27,7 @@ struct RotatingDotsIndicatorItemView: View {
     let index: Int
     let size: CGSize
 
-    @State private var scale: CGFloat = 0
+    @State private var scale: CGFloat = 0.0001
     @State private var rotation: Double = 0
 
     var body: some View {
