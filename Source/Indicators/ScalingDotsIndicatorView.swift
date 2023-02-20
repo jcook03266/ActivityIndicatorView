@@ -29,7 +29,7 @@ struct ScalingDotsIndicatorItemView: View {
     let inset: Int
     let size: CGSize
 
-    @State private var scale: CGFloat = 0
+    @State private var scale: CGFloat = 0.0001
 
     var body: some View {
         let itemSize = (size.width - CGFloat(inset) * CGFloat(count - 1)) / CGFloat(count)
