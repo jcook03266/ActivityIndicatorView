@@ -10,7 +10,7 @@ import SwiftUI
 
 struct GrowingCircleIndicatorView: View {
 
-    @State private var scale: CGFloat = 0
+    @State private var scale: CGFloat = 0.0001
     @State private var opacity: Double = 0
 
     var body: some View {
@@ -22,7 +22,7 @@ struct GrowingCircleIndicatorView: View {
             .scaleEffect(scale)
             .opacity(opacity)
             .onAppear {
-                scale = 0
+                scale = 0.0001
                 opacity = 1
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
                     withAnimation(animation) {
