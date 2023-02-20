@@ -28,7 +28,7 @@ struct FlickeringDotsIndicatorItemView: View {
     let count: Int
     let size: CGSize
 
-    @State private var scale: CGFloat = 0
+    @State private var scale: CGFloat = 0.0001
     @State private var opacity: Double = 0
 
     var body: some View {
